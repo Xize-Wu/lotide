@@ -1,31 +1,31 @@
-const eqArrays = function (arr1, arr2) {
-  if (!Array.isArray(arr1) || !Array.isArray(arr2)){
-    throw new Error("This is an error.")
+const eqArrays = function(arr1, arr2) {
+  if (!Array.isArray(arr1) || !Array.isArray(arr2)) {
+    throw new Error("This is an error.");
   }
   
-  if (arr1.length !== arr2.length){
-    return false
-  } 
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
   
   for (let i = 0; i < arr1.length; i++) {
-    if(arr1[i] !== arr2[i]){
-      return false
-      }
-    } 
-    return true
+    if (arr1[i] !== arr2[i]) {
+      return false;
+    }
+  }
+  return true;
 };
 
-const without = function (arr1, arr2){
-  let output = []
+const without = function(arr1, arr2) {
+  let output = [];
   arr1.forEach(element => {
-    if(!arr2.includes(element)){
+    if (!arr2.includes(element)) {
       output.push(element);
     }
    
   });
   
-  return output
-}
+  return output;
+};
 
 const assertArraysEqual = function(actual, expected) {
   
