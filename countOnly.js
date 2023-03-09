@@ -11,18 +11,7 @@ const countOnly = function(allItems, itemsToCount) {
   const results = {};
 
   for (const item of allItems) {
-    /*
-    let keysToCount = Object.keys(itemsToCount)
-    if(keysToCount.includes(item)){
-    let names = Object.keys(results)
     
-    if(!names.includes(item)){
-      results[item] = 1;
-    }
-    else if(names.includes(item)) {
-      results[item] += 1;
-    }}
-    */
     if (itemsToCount[item]) {
       if (results[item]) {
         results[item] += 1;

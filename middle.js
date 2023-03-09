@@ -8,11 +8,11 @@ const middle = function(input) {
 
   if (l % 2 === 1) {
     let middleIndex = Math.floor(l / 2);
-    const output = input.slice(middleIndex, middleIndex + 1)
+    const output = input.slice(middleIndex, middleIndex + 1);
     return output;
   } else if (l % 2 === 0) {
     let middleIndex = l / 2;
-    const output = input.slice(middleIndex-1, middleIndex + 1);
+    const output = input.slice(middleIndex - 1, middleIndex + 1);
     return output;
   }
   //return []
