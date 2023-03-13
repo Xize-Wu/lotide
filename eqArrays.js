@@ -1,10 +1,4 @@
-/*
-const arrayCheck = function (arr1, arr2){
-  if (Array.isArray(arr1) === Array.isArray(arr2) === true){
-    return[arr1, arr2]
-  }
-};
-*/
+const assertEqual = require('./assertEqual');
 
 const eqArrays = function(arr1, arr2) {
   if (!Array.isArray(arr1) || !Array.isArray(arr2)) {
@@ -23,8 +17,4 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
-console.log(eqArrays([1, 2, 3], [1, 2, 3]));// => true
-console.log(eqArrays([1, 2, 3], [3, 2, 1])); // => false
-
-console.log(eqArrays(["1", "2", "3"], ["1", "2", "3"])); // => true
-console.log(eqArrays(["1", "2", "3"], ["1", "2", 3])); // => false
+module.exports = eqArrays;
