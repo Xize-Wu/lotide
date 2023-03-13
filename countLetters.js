@@ -9,14 +9,16 @@ const assertEqual = function(actual, expected) {
 
 const countLetters = function(line) {
   const output = {};
-  const arr = line.toLowerCase().split(" ").join("").split("");
-  for (const letter of arr) {
+  const newLine = line.toLowerCase().split(" ").join("");
+  for (const letter of newLine) {
+
     if (letter in output) {
       output[letter] += 1;
     } else {
       output[letter] = 1;
     }
   }
+  console.log(output)
   return output;
 };
 
