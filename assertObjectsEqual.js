@@ -1,7 +1,7 @@
 const eqObjects = function(object1, object2) {
   const keys1 = Object.keys(object1);
   const keys2 = Object.keys(object2);
-  
+
   if (keys1.length !== keys2.length) {
     return false;
   }
@@ -16,7 +16,7 @@ const eqObjects = function(object1, object2) {
 };
 
 const assertEqual = function(actual, expected) {
-  
+
   const inspect = require('util').inspect;
   if (eqObjects(actual, expected)) {
     console.log(`✅✅✅ Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
@@ -27,7 +27,7 @@ const assertEqual = function(actual, expected) {
 
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject = { size: "medium", color: "red" };
-assertEqual(shirtObject , anotherShirtObject); // => true
+assertEqual(shirtObject, anotherShirtObject); // => true
 
 const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
-assertEqual(shirtObject , longSleeveShirtObject); // => false
+assertEqual(shirtObject, longSleeveShirtObject); // => false

@@ -15,6 +15,8 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
+module.exports = eqObjects
+/*
 const eqArrays = function(arr1, arr2) {
 
   if (arr1.length !== arr2.length) {
@@ -50,4 +52,4 @@ const anotherShirtObject = { size: "medium", color: "red" };
 assertEqual(shirtObject , anotherShirtObject); // => true
 
 const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
-assertEqual(shirtObject , longSleeveShirtObject); // => false
+assertEqual(shirtObject , longSleeveShirtObject); // => false*/

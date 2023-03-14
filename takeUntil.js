@@ -1,15 +1,17 @@
 const takeUntil = function(array, callback) {
-  let output = [];
-  for (let element of array) {
+  let outputs = [];
+  for (const element of array) {
     if (!callback(element)) {
-      output.push(element);
+      outputs.push(element);
     }
     if (callback(element)) {
-      return output;
+      return outputs;
     }
   }
 };
 
+module.exports = takeUntil;
+/*
 const eqArrays = function(arr1, arr2) {
 
   if (arr1.length !== arr2.length) {
@@ -45,3 +47,4 @@ assertEqual(results1,
 
 assertEqual(results2, [ 'I\'ve', 'been', 'to', 'Hollywood' ]);
 
+*/

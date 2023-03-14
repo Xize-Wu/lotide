@@ -1,12 +1,16 @@
 const findKey = function(obj, callback) {
-  let keys = Object.keys(obj);
-  for (let key of keys) {
-    if (callback(obj[key])) {
-      return key;
+  
+  for (const key in obj){
+    const value = obj[key]
+    const returnedValue = callback(value);
+    if (returnedValue){
+      return key
     }
   }
 };
 
+module.exports = findKey;
+/*
 const assertEqual = function(actual, expected) {
   
   if (actual === expected) {
@@ -27,4 +31,4 @@ const result = findKey({
   "Akelarre":  { stars: 3 }
 }, x => x.stars === 2);
 
-console.log(assertEqual(result, "noma"));
+console.log(assertEqual(result, "noma"));*/

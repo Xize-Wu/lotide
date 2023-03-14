@@ -1,10 +1,7 @@
 const assertEqual = require('./assertEqual');
 
 const eqArrays = function(arr1, arr2) {
-  if (!Array.isArray(arr1) || !Array.isArray(arr2)) {
-    throw new Error("This is an error.");
-  }
-  
+ 
   if (arr1.length !== arr2.length) {
     return false;
   }

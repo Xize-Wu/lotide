@@ -8,6 +8,8 @@ const map = function(array, callback) {
   return results;
 };
 
+module.exports = map
+/*
 const eqArrays = function(arr1, arr2) {
 
   if (arr1.length !== arr2.length) {
@@ -44,4 +46,4 @@ console.log(results3);
 
 assertArraysEqual(results1, ['g', 'c', 't', 'm', 't']);
 assertArraysEqual(results2, ['happy ground', 'happy control', 'happy to', 'happy major', 'happy tom']);
-assertArraysEqual(results3, [2, 4, 6, 8, 10]);
+assertArraysEqual(results3, [2, 4, 6, 8, 10]);*/

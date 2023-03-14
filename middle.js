@@ -7,11 +7,11 @@ const middle = function(input) {
   }
 
   if (l % 2 === 1) {
-    let middleIndex = Math.floor(l / 2);
+    const middleIndex = Math.floor(l / 2);
     const output = input.slice(middleIndex, middleIndex + 1);
     return output;
   } else if (l % 2 === 0) {
-    let middleIndex = l / 2;
+    const middleIndex = l / 2;
     const output = input.slice(middleIndex - 1, middleIndex + 1);
     return output;
   }
@@ -38,19 +38,4 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
-const assertEqual = function(actual, expected) {
-  
-  if (eqArrays(actual, expected)) {
-    console.log(`✅✅✅ Assertion Passed: The middle value of ${actual} is ${expected}`);
-  } else if (!eqArrays(actual, expected)) {
-    console.log(`🔴🔴🔴 Assertion Failed: The middle value of ${actual} is not ${expected}`);
-  }
-};
-
-
-
-assertEqual([1, 2, 3, 4, 5, 6], [3, 4]);
-assertEqual([1],[]);
-assertEqual([1, 2], []);
-assertEqual([2, 3, 4], [3]);
-assertEqual([], []);
+module.exports = middle;
