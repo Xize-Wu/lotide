@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@xizewu/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A mini clone of the Lodash library.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/Xize-Wu/lotide.git"
   },
-  "author": "",
+  "author": {
+    "name": "Xize Wu",
+    "email": "wuxize1995@gmail.com",
+    "url": "https://github.com/Xize-Wu/"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Xize-Wu/lotide/issues"
@@ -22,5 +26,8 @@
   "devDependencies": {
     "chai": "^4.3.7",
     "mocha": "^9.2.2"
+  },
+  "dependencies": {
+    "email-validator": "^2.0.4"
   }
 }
